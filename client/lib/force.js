@@ -28,7 +28,7 @@ var force = (function () {
         baseURL = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '') + context,
 
     // if page URL is http://localhost:3000/myapp/index.html, oauthRedirectURL is http://localhost:3000/myapp/oauthcallback.html
-        oauthRedirectURL = ''; // baseURL + '/oauthcallback.html',
+        oauthRedirectURL = '', // baseURL + '/oauthcallback.html',
 
     // Because the OAuth login spans multiple processes, we need to keep the login success and error handlers as a variables
     // inside the module instead of keeping them local within the login function.
