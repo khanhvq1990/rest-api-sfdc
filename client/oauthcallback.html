@@ -2,9 +2,11 @@
 <body>
 <script>
     if (window.opener.force && window.opener.force.oauthCallback) {
-        window.opener.force.oauthCallback(window.location.href);
+        //window.opener.force.oauthCallback(window.location.href);
+        window.opener.force.oauthCallback('https://test0312-developer-edition.ap6.force.com/');
     } else if (window.opener.oauthCallback) {
-        window.opener.oauthCallback(window.location.href);
+        //window.opener.oauthCallback(window.location.href);
+         window.opener.force.oauthCallback('https://test0312-developer-edition.ap6.force.com/');
     }
     window.close();
 </script>
