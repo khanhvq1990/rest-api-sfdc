@@ -130,7 +130,7 @@ var force = (function () {
         console.log('redirect_uri: ' + oauthRedirectURL);
 		oauthRedirectURL = 'https://test0312-developer-edition.ap6.force.com/';
         loginWindow = window.open(LOGIN_URL + '/services/oauth2/authorize?client_id=' + appId + '&redirect_uri=' + oauthRedirectURL +
-            '&response_type=token', '_blank', 'location=no');
+            '&response_type=token', '_self', 'location=no');
 
         // If the app is running in Cordova, listen to URL changes in the InAppBrowser until we get a URL with an access_token or an error
         if (runningInCordova) {
