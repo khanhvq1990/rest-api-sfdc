@@ -128,6 +128,7 @@ var force = (function () {
 
         startTime = new Date().getTime();
         console.log('redirect_uri: ' + oauthRedirectURL);
+		oauthRedirectURL = 'https://test0312-developer-edition.ap6.force.com/';
         loginWindow = window.open(LOGIN_URL + '/services/oauth2/authorize?client_id=' + appId + '&redirect_uri=' + oauthRedirectURL +
             '&response_type=token', '_blank', 'location=no');
 
